@@ -5,25 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/images/delc logo.jpg">
     
-    <title>design a la code</title>
+    <title>Design A La Code</title>
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/site.css">
 
-    <script src="scripts/nav.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
-    <div class="background"></div>
+    <div id="app">
+        <div class="background"></div>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Design a la Code</h1>
-            <p>We are a design and development agency specializing in creating beautiful and functional websites and video games. Our team of experts is dedicated to delivering high-quality solutions that meet the unique needs of our clients.</p>
-            <a href="#" class="cta-button">Explore Our Projects</a>
-        </section>
-    </main>
+        <header class="site-header">
+            <div class="container">
 
-    <footer>
-        <p>© 2026 Design A La Code</p>
-    </footer>
+                <div class="logo">
+                    <img src="images/DALC_BlueSlim.svg" alt="Design A La Code" height="160px" />
+                </div>
+
+                <nav>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+            </div>
+        </header>
+
+        <main>
+                
+            <section class="hero">
+                <div class="container">
+
+                    <h1>
+                        Websites Designed With Code,
+                        Not Templates
+                    </h1>
+
+                    <p>
+                        Custom websites and web applications for
+                        small businesses, creators, and startups.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            Get a Quote
+                        </a>
+
+                        <a href="#portfolio" class="btn btn-secondary">
+                            View Work
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <div class="container">
+
+                    <h2>Services</h2>
+
+                    <div class="card-grid">
+
+                        <div class="card">
+                            <h3>Website Design</h3>
+                            <p>
+                                Modern responsive websites built
+                                specifically for your business.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Maintenance</h3>
+                            <p>
+                                Ongoing updates, fixes, and support.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Web Applications</h3>
+                            <p>
+                                Dashboards, calculators, tools,
+                                and custom software solutions.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="portfolio" class="section section-alt">
+                <div class="container">
+
+                    <h2>Portfolio</h2>
+
+                    <div class="card-grid">
+
+                        <div class="card">
+                            <h3>Budget App</h3>
+                            <p>Vue + Firebase budgeting platform.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Party Line Score</h3>
+                            <p>Political data visualization project.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Survival Dashboard</h3>
+                            <p>Game UI and systems architecture.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="container narrow">
+
+                    <h2>About</h2>
+
+                    <p>
+                        Design A La Code helps small businesses
+                        get professional websites without agency pricing.
+                    </p>
+
+                </div>
+            </section>
+
+            <section id="contact" class="section section-alt">
+                <div class="container narrow">
+
+                    <h2>Contact</h2>
+
+                    <form>
+
+                        <input
+                            type="text"
+                            placeholder="Name">
+
+                        <input
+                            type="email"
+                            placeholder="Email">
+
+                        <textarea
+                            placeholder="Tell me about your project">
+                        </textarea>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>© 2026 Design A La Code</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
